@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- UI Kit -->
+    <!-- <link rel="stylesheet" type="text/css" href="../public/uikit-3.0.0-rc.10/css/uikit.min.css"> -->
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+
+        <div class="jumbotron">
+                <h1 class="display-4">Friend Finder</h1>
+                <hr class="my-4">
+                <p>Answer a few basic questions.</p>
+                <p>Then find the friend with the greatest compatibility!</p>
+                <p class="lead">
+                        <a href="/survey"><button class="button uk-button uk-button-primary"><span class="fa fa-credit-card"></span> Go To Survey</button></a>
+                </p>
+              </div>
+
+<div class="container">
+<div class="row">
+    <div class="col-sm-8 col-md-8 col-lg-8">
+    <a href="/api/friends">API Friends List</a> |
+    <a href="https://github.com/danielle16/FriendFinder">GitHub Repo</a>
+</div>
+</div>
+</div>
+
+    <script type="text/javascript">
+
+        $.get("/", function(data){
+            console.log(data);
+        });
+    
+    
+    </script>
+    
+</body>
+</html>
